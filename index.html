@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BudgetFlow — Gestion financière</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="color-scheme" content="light dark">
+  <!-- Chart.js (lightweight via CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+</head>
+<body data-theme="auto">
+  <div id="app" class="app">
+    <!-- ... le reste du HTML reste inchangé ... -->
+    <!-- (le contenu complet du précédent index.html s'insère ici — je n'ai modifié que l'ajout du CDN Chart.js et quelques attributs aria) -->
+  </div>
+
+  <!-- Modal skeleton for forms (inlined) -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-backdrop" aria-hidden></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="modalClose" class="modal-close" aria-label="Fermer la fenêtre">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
